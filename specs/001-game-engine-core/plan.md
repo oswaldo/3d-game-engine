@@ -29,7 +29,7 @@
 This plan details the implementation of a simple, modular game engine in pure Scala, supporting 2D menus, 2D and 3D environments. It targets mid-range performance on modern hardware across desktop, mobile, and web platforms, adhering to the project's constitutional principles.
 
 ## Technical Context
-**Language/Version**: Scala 3.4.1
+**Language/Version**: Scala 3.7.3
 **Primary Dependencies**: ScalaFX (for 2D UI and 2D rendering), LWJGL (for 3D rendering)
 **Storage**: N/A
 **Testing**: ScalaTest
