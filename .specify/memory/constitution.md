@@ -1,50 +1,42 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 1.0.0
+- List of modified principles: None
+- Added sections: Development Workflow, API Design
+- Removed sections: None
+- Templates requiring updates: None
+- Follow-up TODOs: None
+-->
+
+# 3D Game Engine Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Pure Scala
+The engine will be written entirely in Scala, leveraging the full power of the language and its ecosystem. We will avoid wrappers around existing Java libraries unless absolutely necessary, to maintain a pure and idiomatic Scala codebase.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Modularity
+The engine must be modular, with a clear separation of concerns between the 2D rendering, 3D rendering, and UI components. This allows for independent development, testing, and deployment of each module.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Immutability by Default
+All data structures within the engine shall be immutable by default. Mutable state will be used only when absolutely necessary for performance reasons, and it must be clearly documented and justified. This approach promotes functional programming principles and helps to create a more robust and predictable engine.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Type-Driven Development
+We will leverage Scala's powerful type system to model the domain and prevent bugs at compile time. We will use features like case classes, sealed traits, and type aliases to create a rich and expressive domain model that is both safe and easy to work with.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Lightweight and Minimal Dependencies
+The engine will be lightweight and have minimal external dependencies. This will make it easier to set up and use, and it will reduce the risk of dependency conflicts. We will favor small, well-defined libraries over large, monolithic frameworks.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Workflow
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+All new features must be developed in a separate branch and submitted as a pull request. All pull requests must be reviewed and approved by at least one other developer before being merged. All code must be accompanied by unit tests, and the test coverage must not decrease.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## API Design
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+The engine's API will be designed to be simple, consistent, and easy to use. It will follow the principles of functional programming and will avoid side effects wherever possible. The API will be well-documented, and we will provide examples of how to use it.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the supreme governing document of the project. Any changes to the constitution must be proposed as a pull request and approved by a majority of the project's maintainers.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2024-05-22 | **Last Amended**: 2024-05-22

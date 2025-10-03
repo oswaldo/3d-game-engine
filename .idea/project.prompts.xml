@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PromptTemplates">
+    <option name="builtInPromptOverrides">
+      <list>
+        <BuiltInPromptOverride>
+          <option name="groupId" value="rules" />
+          <option name="promptId" value="project" />
+          <option name="text" value="* If you cannot run a command, please report what you intended to the developer, so they can copy and execute it in your behalf, pasting the execution results afterwards together with any observation they might consider relevant" />
+        </BuiltInPromptOverride>
+      </list>
+    </option>
+  </component>
+</project>
